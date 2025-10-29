@@ -51,6 +51,40 @@ document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
   });
 })();
 
+// Portfolio: live summary from external status page
+(async () => {
+  const summaryEl = document.getElementById('statusSummary');
+  const badgeEl = document.getElementById('statusBadge');
+  if (!summaryEl || !badgeEl) return;
+  try {
+    const res = await fetch('/service-status/status.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('http');
+    const data = await res.json();
+    let up = 0, down = 0, warn = 0;
+    for (const c of (data.checks || [])) {
+      if (c.ok) up++; else if (c.warn) warn++; else down++;
+    }
+    if (down === 0 && warn === 0) {
+      summaryEl.textContent = 'All systems operational';
+      badgeEl.textContent = 'Operational';
+      badgeEl.classList.add('status-active');
+    } else if (down === 0 && warn > 0) {
+      summaryEl.textContent = 'Degraded performance';
+      badgeEl.textContent = 'Degraded';
+      badgeEl.classList.add('status-webdown');
+    } else {
+      summaryEl.textContent = 'Partial outage';
+      badgeEl.textContent = 'Outage';
+      badgeEl.classList.add('status-stop');
+    }
+  } catch {
+    summaryEl.textContent = 'Status unavailable';
+    badgeEl.textContent = 'Unknown';
+  }
+})();
+
+ 
+
 // Footer year
 document.getElementById('year').textContent = String(new Date().getFullYear());
 
