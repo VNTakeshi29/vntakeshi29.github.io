@@ -17,6 +17,10 @@
     <meta name="twitter:title" content="Takeshi - Personal Profile" />
     <meta name="twitter:description" content="Builds game servers and automation/tools; manages the Auto Play Together (Steam) community." />
     <meta name="twitter:image" content="https://vntakeshi29.github.io/assets/og/og.svg" />
+    <meta property="og:url" content="https://vntakeshi29.github.io/" />
+    <link rel="apple-touch-icon" href="assets/icons/app-icon.svg" />
+    <link rel="dns-prefetch" href="//discord.com" />
+    <link rel="preconnect" href="https://discord.com" crossorigin />
     <link rel="manifest" href="manifest.webmanifest" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preload" href="styles.css" as="style" />
@@ -29,7 +33,7 @@
     <header class="site-header" id="top">
       <div class="container header-inner">
         <a class="brand" href="#top" aria-label="Home">
-          <img src="assets/avatar.jpg" alt="Avatar" class="avatar" />
+          <img src="assets/avatar.jpg" alt="Avatar" class="avatar" width="40" height="40" />
           <span class="brand-text">
             <strong>Takeshi</strong>
             <small>Servers / Automation</small>
@@ -77,7 +81,7 @@
             </ul>
           </div>
           <div class="hero-media" data-reveal>
-            <img class="hero-avatar" src="assets/avatar.jpg" alt="Avatar" />
+            <img class="hero-avatar" src="assets/avatar.jpg" alt="Avatar" width="240" height="240" />
           </div>
         </div>
       </section>
@@ -299,5 +303,11 @@
     </div>
 
     <script src="script.js" defer></script>
+    <noscript>
+      <style>
+        [data-reveal]{opacity:1;transform:none}
+      </style>
+      <div class="container" style="padding:1rem;color:var(--muted)">This site works best with JavaScript enabled.</div>
+    </noscript>
   </body>
   </html>
