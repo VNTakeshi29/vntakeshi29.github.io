@@ -1,0 +1,17 @@
+# Ignore heavy/binary artifacts not needed for the static site
+*.apk
+*.zip
+*.7z
+*.rar
+*.exe
+*.dmg
+*.iso
+
+# Any nested Desktop export folders accidentally dropped in assets
+assets/**/Desktop/**
+
+# Node/Editor junk if ever appears
+node_modules/
+.DS_Store
+Thumbs.db
+*.log

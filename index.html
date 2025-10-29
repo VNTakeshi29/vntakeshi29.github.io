@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Takeshi - Personal Profile</title>
+    <meta name="description" content="Takeshi - builds game servers and automation/tools; manages the Auto Play Together (Steam) community." />
+    <link rel="canonical" href="https://vntakeshi29.github.io/" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0b0c10" />
+    <meta property="og:title" content="Takeshi - Personal Profile" />
+    <meta property="og:description" content="Builds game servers and automation/tools; manages the Auto Play Together (Steam) community." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://vntakeshi29.github.io/assets/og/og.svg" />
+    <meta property="og:image:alt" content="Takeshi - Servers & Automation" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Takeshi - Personal Profile" />
+    <meta name="twitter:description" content="Builds game servers and automation/tools; manages the Auto Play Together (Steam) community." />
+    <meta name="twitter:image" content="https://vntakeshi29.github.io/assets/og/og.svg" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="preload" href="assets/avatar.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <img src="assets/avatar.jpg" alt="Avatar" class="avatar" />
+          <span class="brand-text">
+            <strong>Takeshi</strong>
+            <small>Servers / Automation</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav id="siteNav" class="site-nav" aria-label="Main">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+          <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle theme">
+            <!-- moon (default dark) -->
+            <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <!-- sun (when light) -->
+            <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m14.95 7.05l-1.41-1.41M8.46 8.46L7.05 7.05m9.9 0l-1.41 1.41M8.46 15.54l-1.41 1.41" fill="none" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="section hero" id="hero">
+        <div class="container hero-inner">
+          <div class="hero-text" data-reveal>
+            <h1>Hi, I'm <span class="grad">Takeshi</span></h1>
+            <p class="lead">I build game servers and automation/tools; currently managing the Auto Play Together (Steam) community.</p>
+            <div class="cta">
+              <a class="btn" href="#projects">View projects</a>
+            </div>
+            <ul class="meta">
+              <li>Game servers / Automation / Community</li>
+              <li>Discord: vntakeshii</li>
+            </ul>
+          </div>
+          <div class="hero-media" data-reveal>
+            <img class="hero-avatar" src="assets/avatar.jpg" alt="Avatar" />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container" data-reveal>
+          <h2>About</h2>
+          <p>
+            I'm <strong>Takeshi</strong> — into game servers, automation, and tooling.
+            I enjoy clean architecture, tidy code, and the balance between speed and quality.
+          </p>
+          <div class="about-cards">
+            <div class="card">
+              <h3>Strengths</h3>
+              <ul>
+                <li>Minimal UI/UX</li>
+                <li>Performance and accessibility</li>
+                <li>Component/system design</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Favorite Tools</h3>
+              <ul>
+                <li>Vanilla HTML/CSS/JS</li>
+                <li>React/Vite/Tailwind</li>
+                <li>Figma, Git, VS Code</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Learning</h3>
+              <ul>
+                <li>Advanced animations</li>
+                <li>WebGL / Three.js basics</li>
+                <li>Design tokens</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container" data-reveal>
+          <h2>Featured Projects</h2>
+          <div class="highlights">
+            <ul>
+              <li>Active Discord communities with automation tools</li>
+              <li>2 game servers shipped (NRO, Minecraft)</li>
+              <li>Fast, minimal portfolio — dark-first</li>
+            </ul>
+          </div>
+          <div class="grid projects">
+            <!-- APT -->
+            <article class="project-card">
+              <div class="project-media"><div class="thumb" aria-hidden="true"></div></div>
+              <div class="project-body">
+                <div class="logos">
+                  <img src="assets/logos/NightOwlTGT.png" data-tip="NightOwlTGT" alt="APT" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/apt.svg'" />
+                </div>
+                <h3>Auto Play Together (Steam) - Discord Admin</h3>
+                <p>Run the community and automation system; support users and operate the channel.</p>
+                <div class="badges">
+                  <span>Active</span><span>Commercial</span><span>Discord</span><span>Automation</span><span>Community</span>
+                </div>
+                <div class="links">
+                  <a href="https://discord.gg/qGKQV4sReE" target="_blank" rel="noopener noreferrer">Discord</a>
+                  <a href="https://www.youtube.com/@NightOwlTGT" target="_blank" rel="noopener noreferrer">YouTube</a>
+                </div>
+                <ul class="stats">
+                  <li><strong data-count="" data-suffix="+" data-discord-invite="qGKQV4sReE" data-field="members">0</strong><span>Discord members</span></li>
+                  <li><strong data-count="" data-suffix="" data-discord-invite="qGKQV4sReE" data-field="online">0</strong><span>Online now</span></li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- NRO -->
+            <article class="project-card">
+              <div class="project-media"><div class="thumb" aria-hidden="true"></div></div>
+              <div class="project-body">
+                <div class="logos">
+                  <img src="assets/logos/nrozee.png" data-tip="Ngoc Rong ZEE" alt="ZEE" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/nro-zee.svg'" />
+                  <img src="assets/logos/nrozin.png" data-tip="Ngoc Rong ZIN" alt="ZIN" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/nro-zin.svg'" />
+                </div>
+                <h3>Ngoc Rong Online Servers</h3>
+                <p>Built and operated public servers; performance tuning and community operations.</p>
+                <div class="badges">
+                  <span class="status-stop">Discontinued</span><span>Shipped</span><span>Server</span><span>Commercial</span><span>Ops</span>
+                </div>
+                <div class="links">
+                  <a class="details" href="#" data-title="Ngoc Rong Online Servers" data-roles="Built & operated commercial servers" data-domains="ngocrongzee.com, ngocrongzin.com" data-notes="Project discontinued">Details</a>
+                </div>
+                <ul class="stats">
+                  <li><strong data-count="100" data-suffix="+">0</strong><span>Peak players</span></li>
+                  <li><strong data-count="99" data-suffix="%">0</strong><span>Uptime</span></li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Minecraft -->
+            <article class="project-card">
+              <div class="project-media"><div class="thumb" aria-hidden="true"></div></div>
+              <div class="project-body">
+                <div class="logos">
+                  <img src="assets/logos/mineocd.png" data-tip="MineOCD" alt="MineOCD" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/minecraft-mineocd.svg'" />
+                  <img src="assets/logos/seacraft.png" data-tip="SeaCraft" alt="SeaCraft" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/minecraft-seacraft.svg'" />
+                </div>
+                <h3>Minecraft Vietnam Servers</h3>
+                <p>Community servers with plugin configuration, maintenance and player support.</p>
+                <div class="badges">
+                  <span class="status-stop">Discontinued</span><span>Shipped</span><span>Minecraft</span><span>Commercial</span><span>Community</span>
+                </div>
+                <div class="links">
+                  <a class="details" href="#" data-title="Minecraft Vietnam Servers" data-roles="Built servers, plugins & commercial operations" data-domains="mineocd.com, seacraft.vn" data-notes="Project discontinued">Details</a>
+                </div>
+                <ul class="stats">
+                  <li><strong data-count="100" data-suffix="+">0</strong><span>Peak players</span></li>
+                  <li><strong data-count="2" data-suffix="+">0</strong><span>Servers launched</span></li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Gaming Chair -->
+            <article class="project-card">
+              <div class="project-media"><div class="thumb" aria-hidden="true"></div></div>
+              <div class="project-body">
+                <div class="logos">
+                  <img src="assets/logos/muacheat.png" data-tip="Muacheat" alt="Muacheat" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/gaming-chair.svg'" />
+                  <img src="assets/logos/mars-services.png" data-tip="Mars Services" alt="Mars Services" loading="lazy" onerror="this.onerror=null;this.src='assets/logos/gaming-chair-discord.svg'" />
+                </div>
+                <h3>Gaming Chair</h3>
+                <p>Store for game utilities and tweaks; operations and user experience optimization.</p>
+                <div class="badges">
+                  <span>Active (Discord)</span><span>Website discontinued</span><span>Commercial</span><span>Web</span><span>Payments</span><span>Ops</span>
+                </div>
+                <div class="links">
+                  <a href="https://discord.gg/BW9qD66m5p" target="_blank" rel="noopener noreferrer">Discord</a>
+                  <a class="details" href="#" data-title="Gaming Chair" data-roles="Commercial game utilities via Discord; website discontinued" data-domains="muacheat.com" data-notes="Website discontinued; Discord still operating (sales via Discord)">Details</a>
+                </div>
+                <ul class="stats">
+                  <li><strong data-count="" data-suffix="+" data-discord-invite="BW9qD66m5p" data-field="members">0</strong><span>Discord members</span></li>
+                  <li><strong data-count="" data-suffix="" data-discord-invite="BW9qD66m5p" data-field="online">0</strong><span>Online now</span></li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="container" data-reveal>
+          <h2>Skills</h2>
+          <div class="chips">
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+            <span>React</span>
+            <span>Node.js</span>
+            <span>CSS</span>
+            <span>Design System</span>
+            <span>Performance</span>
+            <span>Accessibility</span>
+          </div>
+          <ul class="bars">
+            <li><span>Front-End</span><i style="--pct:92%"></i></li>
+            <li><span>UI/UX</span><i style="--pct:85%"></i></li>
+            <li><span>Back-End</span><i style="--pct:60%"></i></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section" id="experience">
+        <div class="container" data-reveal>
+          <h2>Experience & Activity</h2>
+          <div class="timeline">
+            <article>
+              <h3>Software Engineering Student <small>Present</small></h3>
+              <p>Personal projects: game servers (NRO, Minecraft), automation tools, and websites.</p>
+            </article>
+            <article>
+              <h3>Discord Admin - Auto Play Together (Steam) <small>Present</small></h3>
+              <p>Operate community and channels; handle user feedback for automation tools.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container" data-reveal>
+          <h2>Contact</h2>
+          <p>Email: <a id="emailLink" href="mailto:vntakeshii@gmail.com">vntakeshii@gmail.com</a></p>
+          <div class="socials">
+            <a href="https://discord.com/users/645512630244605983" aria-label="Discord Profile" data-tip="Discord" target="_blank" rel="noopener noreferrer">Discord</a>
+            <a href="https://t.me/vntakeshi" aria-label="Telegram" data-tip="Telegram" target="_blank" rel="noopener noreferrer">Telegram</a>
+            <a href="https://x.com/vntakeshi29" aria-label="X/Twitter" data-tip="X/Twitter" target="_blank" rel="noopener noreferrer">X/Twitter</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Takeshi. All flex, no stress.</p>
+      </div>
+    </footer>
+
+    <!-- Scroll progress + Back to top -->
+    <div id="scrollProgress"><i></i></div>
+    <button id="backTop" aria-label="Back to top" title="Back to top">^</button>
+
+    <!-- Command Palette -->
+    <div id="cmdk" aria-hidden="true">
+      <div class="cmdk-dialog" role="dialog" aria-modal="true" aria-label="Command Palette">
+        <input id="cmdkInput" type="text" placeholder="Type a command... (e.g., projects)" autocomplete="off" />
+        <ul id="cmdkList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js" defer></script>
+  </body>
+  </html>
