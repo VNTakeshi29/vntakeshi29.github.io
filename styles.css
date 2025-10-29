@@ -99,6 +99,7 @@ body.fx-off .hero::before { opacity: 0; }
 .highlights { margin: .5rem 0 1rem; padding: .75rem 1rem; border: 1px solid var(--border); border-radius: 12px; background: var(--paper); }
 .highlights ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
 .highlights li { margin: .2rem 0; }
+.projects-sub { margin: 1rem 0 .5rem; color: var(--muted); font-size: .9rem; text-transform: uppercase; letter-spacing: .06em; }
 .project-card { display: grid; grid-template-rows: auto 1fr; background: var(--paper); border: 1px solid var(--border); border-radius: 16px; overflow: clip; transition: transform .15s ease; }
 .project-card:hover { transform: translateY(-3px); }
 .project-card.tilt { will-change: transform; transform-style: preserve-3d; }
